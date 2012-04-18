@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>documents</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>Lafmog.java</string>
+			<key>lastUsed</key>
+			<date>2012-03-05T00:01:21Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>LastFmApi.java</string>
+			<key>lastUsed</key>
+			<date>2012-03-05T00:01:24Z</date>
+			<key>selected</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>RAIIException.java</string>
+			<key>lastUsed</key>
+			<date>2012-03-04T20:05:27Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Settings.java</string>
+			<key>lastUsed</key>
+			<date>2012-03-04T20:05:25Z</date>
+		</dict>
+	</array>
+	<key>fileHierarchyDrawerWidth</key>
+	<integer>126</integer>
+	<key>metaData</key>
+	<dict/>
+	<key>showFileHierarchyDrawer</key>
+	<true/>
+	<key>windowFrame</key>
+	<string>{{235, 58}, {1157, 797}}</string>
+</dict>
+</plist>
