@@ -9,6 +9,8 @@ public class Lafmog {
             LastFmApi.GetRecentTracksError error = LastFmApi.GetRecentTracksError.fromInt(2);
             System.out.println(error);
             
+            LastFmApi api = new LastFmApi();
+            api.test();
             
         } catch (Exception e) {
             System.err.println("Encountered exception " + e);

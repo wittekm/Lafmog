@@ -5,7 +5,7 @@ import java.io.IOException;
 public class Settings {
     private Properties properties;
     private final String LASTFM_API_KEY, LASTFM_SECRET, FACEBOOK_APP_ID, 
-      FACEBOOK_APP_SECRET;
+      FACEBOOK_APP_SECRET, USERNAME;
     private static Settings instance;
     
     public Settings() throws RAIIException {
@@ -19,16 +19,23 @@ public class Settings {
         LASTFM_SECRET = properties.getProperty("LASTFM_SECRET");
         FACEBOOK_APP_ID = properties.getProperty("FACEBOOK_APP_ID");
         FACEBOOK_APP_SECRET = properties.getProperty("FACEBOOK_APP_SECRET");
+        USERNAME = properties.getProperty("USERNAME");
     }
     
     public String getLastfmApiKey() { return LASTFM_API_KEY; }
     public String getLastfmSecret() { return LASTFM_SECRET; }
     public String getFacebookAppId() { return FACEBOOK_APP_ID; }
     public String getFacebookAppSecret() { return FACEBOOK_APP_SECRET; }
+    public String getUsername() { return USERNAME; }
     
-    public static Settings getInstance() throws RAIIException {
-        if(instance == null)
-            instance = new Settings();
+    public static Settings getInstance() {
+        try {
+            if(instance == null)
+                instance = new Settings();
+        } catch(RAIIException e) {
+            System.err.println("You need a settings.txt.");
+            System.exit(-1);
+        }
         return instance;
     }
 }
